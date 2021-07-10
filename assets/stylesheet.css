@@ -3,18 +3,20 @@ body {
 }
 
 .nav-bar {
-  height: 56px;
-  margin-top: -5px;
-  margin-left: -5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding-bottom: 0 16px;
+  background-color: #212121;
   position: fixed;
   width: 100%;
-  background-color: #212121;
+  top: 0%;
 }
 
 .start {
   display: inline-flex;
-  align-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
 }
 
 #hamburger-menu {
@@ -43,9 +45,8 @@ body {
 
 .center {
   display: inline-flex;
-  align-content: center;
-  width: 728px;
-  height: 40px;
+  align-items: center;
+  flex: 2;
 }
 
 .container {
@@ -125,14 +126,11 @@ button {
 }
 
 .end {
-  width: 225;
-  height: 40;
   display: inline-flex;
   align-content: flex-end;
   align-items: right;
   justify-content: right;
   justify-content: space-between;
-  margin-left: 120px;
 }
 
 .end-icon {
@@ -159,4 +157,118 @@ button {
   width: 32px;
   margin: 8px;
   border: none;
+}
+
+.main-body {
+  display: flex;
+  align-items: center;
+  margin: 20px 40px 20px 40px;
+  border: oldlace;
+  border-width: 2px;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 2;
+}
+
+.video-player {
+  padding-top: 60px;
+}
+
+h1 {
+  color: white;
+  font-size: 18px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.vid-info {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.75px solid #aaa;
+  border-top: 0.75px solid #aaa;
+  padding: 12px;
+}
+
+.acct {
+  padding: 4px 16px 0 0;
+  display: inline-flex;
+  align-content: flex-start;
+  align-items: left;
+  justify-content: left;
+  justify-content: space-between;
+}
+
+.acct img {
+  border-radius: 50%;
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.description {
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  color: #aaa;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.white-font {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.white-font a {
+  color: #aaa;
+}
+
+.subscribe-btn {
+  display: inline-flex;
+  align-content: flex-end;
+  justify-content: right;
+}
+
+.subscribe-btn button {
+  align-items: flex-start;
+  border: none;
+  background: transparent;
+}
+
+.subscribe-btn button img {
+  border: none;
+  max-height: 55px;
+  max-width: 117px;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.rec-vid {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.rec-vid img {
+  align-items: flex-start;
+  max-width: 168px;
+  max-height: 94px;
+  padding: 10px;
+}
+
+.rec-vid p {
+  margin-top: -6px;
+  line-height: 1.8;
+  align-items: flex-end;
 }
